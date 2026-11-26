@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>طلب منتج مخصص - متجر الحرف اليدوية</title>
+    <!-- ربط ملف الـ CSS الخارجي المشترك للموقع -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ترويسة الموقع المتناسقة مع باقي الصفحات -->
+    <header>
+        <h1>متجر الحرف اليدوية (Handmade Crafts Store)</h1>
+        <p>موقع لدعم الحرفيين وعرض أجمل المشغولات اليدوية</p>
+        <nav>
+            <a href="index.html">الرئيسية</a> | 
+            <a href="about.html">من نحن</a> | 
+            <a href="products.html">منتجاتنا</a> | 
+            <a href="prices.html">جدول الأسعار والبيانات</a> | 
+            <a href="custom-order.html">طلب مخصص</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم نموذج الطلب داخل إطار متناسق مع تصميم الموقع -->
+        <section class="form-section">
+            <div class="form-container">
+                <h2>نموذج طلب منتج مخصص (Custom Order)</h2>
+                
+                <!-- نموذج الطلب المخصص -->
+                <form id="orderForm" onsubmit="return validateCustomOrder()">
+                    
+                    <!-- حقل نصي لاسم العميل -->
+                    <label for="clientName">الاسم الكامل:</label><br>
+                    <input type="text" id="clientName" name="clientName" placeholder="أدخل اسمك هنا"><br><br>
+
+                    <!-- حقل كلمة المرور (مطلوبة ضمن متطلبات المادة) -->
+                    <label for="accountPass">كلمة مرور الحساب:</label><br>
+                    <input type="password" id="accountPass" name="accountPass" placeholder="أدخل كلمة المرور"><br><br>
+
+                    <!-- قائمة منسدلة لاختيار نوع الحرفة أو المنتج -->
+                    <label for="craftType">نوع الحرفة المطلوبة:</label><br>
+                    <select id="craftType" name="craftType">
+                        <option value="">-- اضغط لاختيار التصنيف --</option>
+                        <option value="embroidery">تطريز وخياطة يدوية</option>
+                        <option value="pottery">فخار وخزف</option>
+                        <option value="woodwork">أعمال خشبية</option>
+                        <option value="accessories">إكسسوارات ومجوهرات يدوية</option>
+                    </select><br><br>
+
+                    <!-- حقل نصي طويل لوصف تفاصيل المنتج المخصص -->
+                    <label for="orderDetails">تفاصيل التصميم والألوان:</label><br>
+                    <textarea id="orderDetails" name="orderDetails" rows="4" placeholder="اكتبي تفاصيل ومقاسات المنتج المخصص..."></textarea><br><br>
+
+                    <!-- زر الإرسال -->
+                    <input type="submit" value="إرسال الطلب المخصص">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ربط ملف الجافا سكريبت للتحقق من الحقول -->
+    <script src="script.js"></script>
+</body>
+</html>
