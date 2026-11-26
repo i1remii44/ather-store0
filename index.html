@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أثر | متجر الحرف اليدوية</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gallery-section {
+            background-color: #f7f1e8;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .gallery-section h2 {
+            color: #5c3d2e;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .gallery-section p {
+            color: #7c5844;
+            margin-bottom: 35px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .gallery-card {
+            background-color: #fffaf3;
+            border: 1px solid #e0d0be;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(92, 61, 46, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+            background-color: #fff;
+            display: block;
+        }
+
+        .gallery-card span {
+            display: block;
+            padding: 15px;
+            color: #5c3d2e;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .contact-section {
+            background-color: #efe4d6;
+            padding: 50px 20px;
+            text-align: center;
+            border-top: 2px solid #d5bfa8;
+        }
+
+        .contact-section h2 {
+            color: #5c3d2e;
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            color: #7c5844;
+            margin-bottom: 25px;
+        }
+
+        .contact-box {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            background-color: #fffaf3;
+            padding: 20px 35px;
+            border-radius: 12px;
+            border: 1px solid #d5bfa8;
+            box-shadow: 0 4px 10px rgba(92, 61, 46, 0.06);
+        }
+
+        .contact-item {
+            color: #5c3d2e;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .contact-item a {
+            color: #8b5a2b;
+            text-decoration: none;
+            margin-right: 6px;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="welcome">
+        يومك سعيد! ☀️
+    </div>
+
+    <header>
+        <h2 class="logo">أثــر</h2>
+
+        <!-- القائمة العلوية المرتبة -->
+        <nav>
+            <!-- الصفحات الرئيسية والتعريفية -->
+            <a href="index.html">الرئيسية</a>
+            <a href="https://hamshamad11-tech.github.io/Project-/" target="_blank">من نحن</a>
+            <a href="#gallery">معرض الصور</a>
+
+            <!-- أقسام المنتجات -->
+            <a href="https://lamsah-26p34rk9.manus.space" target="_blank">الشنط</a>
+
+            <a href="https://yasseralbahri.github.io/shouq-handmade/" target="_blank">إبداعات منزلية</a>
+
+            <a href="https://yasseralbahri.github.io/athar-pottery/page7.html" target="_blank">الفخار</a>
+
+            <a href="https://sevcmoav-byte.github.io/-/index.html" target="_blank">المشغولات الحرفية</a>
+
+            <a href="https://reem99-10.github.io/Products/" target="_blank">منتجات أخرى</a>
+
+            <!-- الأسعار والطلبات -->
+            <a href="https://sevcmoav-byte.github.io/-/index.html" target="_blank">الأسعار</a>
+
+            <a href="https://tpyh4wrmp9-arch.github.io/-/page5.html" target="_blank">طلب منتج</a>
+
+            <a href="./handmade-store/custom-order.HTML">طلب منتج مخصص</a>
+
+            <!-- التواصل -->
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- الواجهة الرئيسية -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <span>صُنعت بحب، لتبقى أثرًا</span>
+
+                <h1>كل قطعة تحكي حكاية</h1>
+
+                <p>
+                    اكتشفي عالم الحرف اليدوية،
+                    حيث يلتقي الإبداع بالأصالة،
+                    وكل قطعة تحمل لمسة فريدة من صانعها.
+                </p>
+
+                <a href="https://reem99-10.github.io/Products/" target="_blank" class="btn">
+                    اكتشفي منتجاتنا
+                </a>
+            </div>
+
+            <div class="hero-images">
+
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=600"
+                     alt="الفخار اليدوي">
+
+                <img src="https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?w=600"
+                     alt="الحرف اليدوية">
+
+                <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?w=600"
+                     alt="الفنون اليدوية">
+
+            </div>
+
+        </section>
+
+        <!-- من نحن -->
+        <section class="about">
+
+            <h2>مرحبًا بك في أثر</h2>
+
+            <p>
+                متجر يجمع إبداعات الحرفيين،
+                ويدعم المواهب المحلية،
+                ويمنح كل قطعة يدوية فرصة لتروي قصتها.
+            </p>
+
+            <a href="https://hamshamad11-tech.github.io/Project-/"
+               target="_blank" class="btn">
+                تعرفي علينا
+            </a>
+
+        </section>
+
+        <!-- معرض الصور -->
+        <section id="gallery" class="gallery-section">
+
+            <h2>معرض الصور</h2>
+
+            <p>
+                مقتطفات من إبداعات الحرف اليدوية والتطريز التراثي الأصيل
+            </p>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-card">
+                    <img src="IMG_0259.jpg" alt="قطع منسوجة بعناية">
+                    <span>قطع منسوجة بعناية</span>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="IMG_0260.JPG" alt="تطريز يدوي متقن">
+                    <span>تطريز يدوي متقن</span>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="IMG_0261.JPG" alt="تطريز بهويتنا">
+                    <span>تطريز بهويتنا</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- قسم الدعم -->
+        <section class="support">
+
+            <h2>كل دعم منك يصنع فرقًا</h2>
+
+            <p>
+                باختيارك للمنتجات اليدوية،
+                أنت تساهمين في دعم الحرفيين
+                والمحافظة على الحرف الأصيلة.
+            </p>
+
+            <a href="https://reem99-10.github.io/Products/" target="_blank" class="btn">
+                اكتشفي منتجاتنا
+            </a>
+
+        </section>
+
+        <!-- تواصل معنا -->
+        <section id="contact" class="contact-section">
+
+            <h2>تواصل معنا</h2>
+
+            <p>
+                يسعدنا استقبال استفساراتكم وطلباتكم الخاصة في أي وقت
+            </p>
+
+            <div class="contact-box">
+
+                <div class="contact-item">
+                    📞 رقم الجوال:
+                    <a href="tel:+966548923107" dir="ltr">
+                        +966 54 892 3107
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    ✉️ البريد الإلكتروني:
+                    <a href="mailto:athar.crafts26@gmail.com">
+                        athar.crafts26@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- تذييل الموقع -->
+    <footer>
+
+        <h2>أثر</h2>
+
+        <ul>
+
+            <li>
+                <a href="index.html">الرئيسية</a>
+            </li>
+
+            <li>
+                <a href="https://hamshamad11-tech.github.io/Project-/"
+                   target="_blank">من نحن</a>
+            </li>
+
+            <li>
+                <a href="#gallery">معرض الصور</a>
+            </li>
+
+            <li>
+                <a href="https://lamsah-26p34rk9.manus.space"
+                   target="_blank">الشنط</a>
+            </li>
+
+            <li>
+                <a href="https://yasseralbahri.github.io/shouq-handmade/"
+                   target="_blank">إبداعات منزلية</a>
+            </li>
+
+            <li>
+                <a href="https://yasseralbahri.github.io/athar-pottery/page7.html"
+                   target="_blank">الفخار</a>
+            </li>
+
+            <li>
+                <a href="https://sevcmoav-byte.github.io/-/index.html"
+                   target="_blank">المشغولات الحرفية</a>
+            </li>
+
+            <li>
+                <a href="https://reem99-10.github.io/Products/" target="_blank">منتجات أخرى</a>
+            </li>
+
+            <li>
+                <a href="https://sevcmoav-byte.github.io/-/index.html" target="_blank">الأسعار</a>
+            </li>
+
+            <li>
+                <a href="https://tpyh4wrmp9-arch.github.io/-/page5.html"
+                   target="_blank">طلب منتج</a>
+            </li>
+
+            <li>
+                <a href="./handmade-store/custom-order.HTML">
+                    طلب منتج مخصص
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">تواصل معنا</a>
+            </li>
+
+        </ul>
+
+        <p>جميع الحقوق محفوظة لمتجر أثر ©️ 2026</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

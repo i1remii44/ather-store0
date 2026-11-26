@@ -1,0 +1,237 @@
+
+/* تنسيق عام للموقع */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5eee3;
+    color: #554333;
+    direction: rtl;
+}
+
+/* عبارة يومك سعيد */
+.welcome {
+    background-color: #e8ddcc;
+    color: #795b43;
+    text-align: center;
+    padding: 13px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* القائمة الرئيسية */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 5%;
+    background-color: #f5eee3;
+}
+
+.logo {
+    font-size: 35px;
+    color: #795b43;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #554333;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #b58b64;
+}
+
+/* الواجهة الرئيسية */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 65px 7%;
+    min-height: 480px;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-text span {
+    color: #a47b55;
+    font-size: 18px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin: 20px 0;
+    color: #59432f;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+/* زر المنتجات */
+.btn {
+    display: inline-block;
+    background-color: #795b43;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #a47b55;
+}
+
+/* الصور في منتصف الصفحة */
+.hero-images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-images img {
+    width: 31%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 100px 100px 12px 12px;
+    box-shadow: 0 5px 15px rgba(80, 60, 40, 0.12);
+    transition: transform 0.3s;
+}
+
+.hero-images img:hover {
+    transform: translateY(-10px);
+}
+
+.hero-images img:nth-child(2) {
+    height: 340px;
+}
+
+/* قسم التعريف */
+.about {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #eee4d5;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+/* قسم دعم الحرفيين */
+.support {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #f5eee3;
+}
+
+.support h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.support p {
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+/* أسفل الصفحة */
+footer {
+    background-color: #59432f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer li {
+    display: inline-block;
+    margin: 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e8cba9;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* تنسيق الشاشات الصغيرة */
+@media (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-images {
+        width: 100%;
+    }
+
+    .hero-images img {
+        height: 190px;
+    }
+
+    .hero-images img:nth-child(2) {
+        height: 230px;
+    }
+}
